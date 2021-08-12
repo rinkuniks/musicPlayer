@@ -5,6 +5,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestOptions
 import com.nikhil.musicplayer.R
+import com.nikhil.musicplayer.exoplayer.MusicServiceConnection
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,6 +16,11 @@ import javax.inject.Singleton
 @Module
 @InstallIn(ApplicationComponent::class)
 object AppModule {
+
+    @Singleton
+    @Provides
+    fun providesMusicServiceConnection(@ApplicationContext context: Context) =
+        MusicServiceConnection(context)
 
     @Provides
     @Singleton
