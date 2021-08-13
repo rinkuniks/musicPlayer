@@ -13,8 +13,8 @@ import com.google.android.exoplayer2.SimpleExoPlayer
 import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector
 import com.google.android.exoplayer2.ext.mediasession.TimelineQueueNavigator
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
-import com.nikhil.musicplayer.data.other.Constants.MEDIA_ROOT_ID
-import com.nikhil.musicplayer.data.other.Constants.NETWORK_ERROR
+import com.nikhil.musicplayer.other.Constants.MEDIA_ROOT_ID
+import com.nikhil.musicplayer.other.Constants.NETWORK_ERROR
 import com.nikhil.musicplayer.exoplayer.callbacks.MusicPlaybackPreparer
 import com.nikhil.musicplayer.exoplayer.callbacks.MusicPlayerEventListener
 import com.nikhil.musicplayer.exoplayer.callbacks.MusicPlayerNotificationListener

@@ -12,8 +12,8 @@ import com.bumptech.glide.request.transition.Transition
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.ui.PlayerNotificationManager
 import com.nikhil.musicplayer.R
-import com.nikhil.musicplayer.data.other.Constants.NOTIFICATION_CHANNEL_ID
-import com.nikhil.musicplayer.data.other.Constants.NOTIFICATION_ID
+import com.nikhil.musicplayer.other.Constants.NOTIFICATION_CHANNEL_ID
+import com.nikhil.musicplayer.other.Constants.NOTIFICATION_ID
 
 class MusicNotificationManager(
     private val context: Context,
@@ -48,6 +48,7 @@ class MusicNotificationManager(
         private val mediaController: MediaControllerCompat
     ): PlayerNotificationManager.MediaDescriptionAdapter {
         override fun getCurrentContentTitle(player: Player): CharSequence {
+            newSongCallbacks()
             return mediaController.metadata.description.title.toString()
         }
 

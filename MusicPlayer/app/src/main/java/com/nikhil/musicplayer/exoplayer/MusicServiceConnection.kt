@@ -9,9 +9,9 @@ import android.support.v4.media.session.MediaControllerCompat
 import android.support.v4.media.session.PlaybackStateCompat
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.nikhil.musicplayer.data.other.Constants.NETWORK_ERROR
-import com.nikhil.musicplayer.data.other.Event
-import com.nikhil.musicplayer.data.other.Resource
+import com.nikhil.musicplayer.other.Constants.NETWORK_ERROR
+import com.nikhil.musicplayer.other.Event
+import com.nikhil.musicplayer.other.Resource
 
 class MusicServiceConnection(
     context: Context

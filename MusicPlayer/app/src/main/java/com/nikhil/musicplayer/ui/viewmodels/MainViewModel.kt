@@ -7,13 +7,12 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.nikhil.musicplayer.data.entities.Song
-import com.nikhil.musicplayer.data.other.Constants.MEDIA_ROOT_ID
-import com.nikhil.musicplayer.data.other.Resource
+import com.nikhil.musicplayer.other.Constants.MEDIA_ROOT_ID
+import com.nikhil.musicplayer.other.Resource
 import com.nikhil.musicplayer.exoplayer.MusicServiceConnection
 import com.nikhil.musicplayer.exoplayer.isPlayEnabled
 import com.nikhil.musicplayer.exoplayer.isPlaying
 import com.nikhil.musicplayer.exoplayer.isPrepared
-
 
 class MainViewModel @ViewModelInject constructor(
     private val musicServiceConnection: MusicServiceConnection

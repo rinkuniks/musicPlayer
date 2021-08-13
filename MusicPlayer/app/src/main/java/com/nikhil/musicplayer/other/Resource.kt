@@ -1,4 +1,4 @@
-package com.nikhil.musicplayer.data.other
+package com.nikhil.musicplayer.other
 
 data class Resource<out T> (val status: Status, val data: T?, val message: String?) {
 

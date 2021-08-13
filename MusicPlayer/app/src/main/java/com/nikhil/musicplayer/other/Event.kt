@@ -1,4 +1,4 @@
-package com.nikhil.musicplayer.data.other
+package com.nikhil.musicplayer.other
 
 open class Event<out T>(private val data: T) {
     var hasBeenHandled = false
